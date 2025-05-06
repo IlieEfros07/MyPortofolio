@@ -95,4 +95,5 @@ C:\dev\MyPortofolio\MyPortofolio\obj\Debug\net9.0\refint\MyPortofolio.dll
 C:\dev\MyPortofolio\MyPortofolio\obj\Debug\net9.0\MyPortofolio.pdb
 C:\dev\MyPortofolio\MyPortofolio\obj\Debug\net9.0\MyPortofolio.genruntimeconfig.cache
 C:\dev\MyPortofolio\MyPortofolio\obj\Debug\net9.0\ref\MyPortofolio.dll
-C:\dev\MyPortofolio\MyPortofolio\obj\Debug\net9.0\compressed\35rxs5tcvv-nqxzdhh95s.gz
+C:\dev\MyPortofolio\MyPortofolio\obj\Debug\net9.0\MyPortofolio.sourcelink.json
+C:\dev\MyPortofolio\MyPortofolio\obj\Debug\net9.0\compressed\35rxs5tcvv-5dhrybbqn7.gz

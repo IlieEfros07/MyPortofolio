@@ -23,24 +23,23 @@ namespace MyPortfolio.Controllers
                     Title = "Avicol ISI Farm",
                     Description = "Full-stack ordering app for Avicol ISI Farm",
                     Technologies = new List<string> { "ASP.NET Core", "Entity Framework", "MySQL" },
-                    Link="https://github.com/IlieEfros07/avicol-isi-farm" ,
-                    ImageUrl = "https://i.imgur.com/CgFOIFP.png"
+                    Link="https://github.com/IlieEfros07/avicol-isi-farm" 
                 },
                 new Project
                 {
                     Title = "Pathway Career Finder",
                     Description = "Desing for a career finder app",
                     Technologies = new List<string> { "ASP.NET Core", "Entity Framework", "MySQL", "HTML/CSS" },
-                    Link = "https://github.com/IlieEfros07/pathway-career-finder-",
-                    ImageUrl = "https://i.imgur.com/OQE6TVA.png"
+                    Link = "https://github.com/IlieEfros07/pathway-career-finder-"
+
                 },
                 new Project
                 {
                     Title = "Task Manager with AI",
                     Description = "To Do app that uses AI to compose your task",
                     Technologies = new List<string> { "React", "ForeFornt API", "Prisma" },
-                    Link="https://github.com/IlieEfros07/Task-Manager-with-AI",
-                    ImageUrl = "https://i.imgur.com/f0WCLzO.png"
+                    Link="https://github.com/IlieEfros07/Task-Manager-with-AI"
+
 
                 },
                 new Project
@@ -48,8 +47,8 @@ namespace MyPortfolio.Controllers
                     Title = "GoPro Landing Page",
                     Description = "A Landing Page for GoPro",
                     Technologies = new List<string> { "HTML", "CSS" },
-                    Link="https://github.com/IlieEfros07/GOPRO-PROJECT",
-                    ImageUrl = "https://i.imgur.com/rLQdQLC.png"
+                    Link="https://github.com/IlieEfros07/GOPRO-PROJECT"
+
                 }
 
             };
