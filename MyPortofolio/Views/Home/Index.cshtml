@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Portfolio";
+}
+
+<div class="container">
+
+    <section id="about" class="section col-11 col-lg-8 profile-section">
+        <div class="row align-items-center">
+
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="profile-photo-container">
+                    <img src="/images/profile.jpg" alt="Your Name" class="profile-photo">
+                    <div class="gradient-border"></div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <h1 class="display-4 mb-3">Hi, I'm Efros Ilie</h1>
+                <p class="lead">A passionate full-stack developer dedicated to building minimalist, innovative, and user-friendly web applications, with a strong focus on modern tools, AI integration, and seamless user experiences.</p>
+                <div class="social-links">
+                    <a href="https://github.com/IlieEfros07" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/efros-ilie-486540293/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100014568271604" class="social-icon"><i class="fa-brands fa-facebook-f" style="color: #fafafa;"></i></a>
+                    <a href="https://www.instagram.com/efros.i/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section col-11 col-lg-8">
+        <h2 class="mb-4">Skills</h2>
+        <div class="d-flex flex-wrap gap-2">
+            @if (ViewBag.Skills != null)
+            {
+                @foreach (var skill in ViewBag.Skills)
+                {
+                    <span class="skill-badge rounded-pill py-2 px-3">@skill</span>
+                }
+            }
+        </div>
+    </section>
+
+    <section id="projects" class="section col-11 col-lg-8">
+        <h2 class="mb-4">Projects</h2>
+        <div class="row g-4">
+            @if (ViewBag.Projects != null)
+            {
+                foreach (var project in ViewBag.Projects)
+                {
+                    <div class="col-12 col-md-6">
+                        <div class="project-card rounded-3 p-4 h-100 d-flex flex-column">
+                            <img src="@project.ImageUrl" alt="@project.Title Screenshot" class="img-fluid rounded mb-3 project-image" />
+                            <h3 class="mb-2">@project.Title</h3>
+                            <p class="mb-3 flex-grow-1">@project.Description</p>
+
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                @foreach (var tech in project.Technologies)
+                                {
+                                    <span class="tech-pill rounded-pill py-1 px-3 small">@tech</span>
+                                }
+                            </div>
+
+                            <a href="@project.Link" target="_blank" class="btn btn-outline-light mt-auto w-100">View Project</a>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </section>
+
+</div>
